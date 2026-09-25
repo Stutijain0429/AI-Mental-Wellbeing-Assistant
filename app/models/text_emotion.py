@@ -1,16 +1,7 @@
-from pathlib import Path
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-
-MODEL_PATH = (
-    PROJECT_ROOT
-    / "notebooks"
-    / "models"
-    / "text_emotion_model_fast"
-    / "final"
-)
+MODEL_PATH = "stuti04/mindease-emotion-model"
 
 
 class TextEmotionModel:
