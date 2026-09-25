@@ -1,3 +1,6 @@
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 import streamlit as st
 from datetime import datetime
 import plotly.express as px
